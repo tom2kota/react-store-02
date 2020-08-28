@@ -1,3 +1,12 @@
+# React Store App (react: 16.13.1)
+
+E-commerce project DEMO:
+- [vercel.app link](https://react-store-02.vercel.app)
+
+
+---------------
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
