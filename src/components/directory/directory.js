@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {MenuItem} from "../menu-item/menuItem"
+import MenuItem from "../menu-item/menuItem"
 import categoryOneImage from '../../images/01.png'
 import categoryTwoImage from '../../images/03.png'
 import categoryThreeImage from '../../images/10.png'
@@ -14,27 +14,32 @@ export default class Directory extends Component {
             {
                 title: 'category #1',
                 image: categoryOneImage,
-                id: 1
+                id: 1,
+                linkUrl: 'category_1'
             },
             {
                 title: 'category #2',
                 image: categoryTwoImage,
-                id: 2
+                id: 2,
+                linkUrl: 'category_2'
             },
             {
                 title: 'category #3',
                 image: categoryThreeImage,
-                id: 3
+                id: 3,
+                linkUrl: 'category_3'
             },
             {
                 title: 'category #4',
                 image: categoryFourImage,
-                id: 4
+                id: 4,
+                linkUrl: 'category_4'
             },
             {
                 title: 'category #5',
                 image: categoryFiveImage,
-                id: 5
+                id: 5,
+                linkUrl: 'category_5'
             },
 
         ]
@@ -43,10 +48,9 @@ export default class Directory extends Component {
     render() {
         return (
             <div className='directory-menu'>
-                {this.state.sections.map(({id, title, image}) => <MenuItem
-                    key={id}
-                    title={title.toUpperCase()}
-                    image={image}/>)}
+                {this.state.sections.map(
+                    ({id, ...restProps}) => <MenuItem key={id} {...restProps} />
+                )}
             </div>
         )
     }
