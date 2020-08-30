@@ -1,5 +1,5 @@
 import React from "react";
-
+import {CollectionItem} from "../collection-item/CollectionItem";
 import './CollectionPreview.scss';
 
 export const CollectionPreview = ({title, items}) => (
@@ -7,8 +7,9 @@ export const CollectionPreview = ({title, items}) => (
         <h1 className='title'>{title.toUpperCase()}</h1>
         <div className='preview'>
             {
-                items.map(
-                    (item) => <div key={item.id}>{item.name}</div>
+                items.map(({id, ...otherItemProps}) =>
+                    // (item) => <div key={item.id}>{item.name}</div>
+                    <CollectionItem key={id} {...otherItemProps} />
                 )
             }
         </div>
