@@ -1,12 +1,12 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import {HomePage} from "../pages/homepage/homePage";
-import {CategoryOne} from "./categories/categoryOne";
-import {CategoryTwo} from "./categories/categoryTwo";
-import {CategoryThree} from "./categories/categoryThree";
-import {CategoryFour} from "./categories/categoryFour";
-import {CategoryFive} from "./categories/categoryFive";
-import {ShopPage} from "../pages/shop/shopPage";
+import {HomePage} from "../pages/homepage/HomePage";
+import {CategoryOne} from "./categories/CategoryOne";
+import {CategoryTwo} from "./categories/CategoryTwo";
+import {CategoryThree} from "./categories/CategoryThree";
+import {CategoryFour} from "./categories/CategoryFour";
+import {CategoryFive} from "./categories/CategoryFive";
+import {ShopPage} from "../pages/shop/ShopPage";
 
 export const App = () => (
     <div>

@@ -1,7 +1,7 @@
 import React from "react"
 // withRouter HOC gives access to history https://reactrouter.com/web/guides/quick-start
 import {withRouter} from 'react-router-dom'
-import './menuItem.scss'
+import './MenuItem.scss'
 
 const MenuItem = ({title, image, history, linkUrl, match}) => (
     <div className='menu-item' onClick={() => history.push(`${match.url}${linkUrl}`)}>

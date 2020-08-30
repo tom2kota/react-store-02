@@ -30,7 +30,7 @@ export const SHOP_DATA = [
         ]
     },
     {
-        id: 1,
+        id: 2,
         title: 'Product Category #2',
         routeName: 'product_category_2',
         items: [
@@ -56,7 +56,7 @@ export const SHOP_DATA = [
         ]
     },
     {
-        id: 1,
+        id: 3,
         title: 'Product Category #3',
         routeName: 'product_category_3',
         items: [

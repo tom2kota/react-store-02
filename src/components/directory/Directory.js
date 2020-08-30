@@ -1,11 +1,11 @@
 import React, {Component} from "react";
-import MenuItem from "../menu-item/menuItem"
+import MenuItem from "../menu-item/MenuItem"
 import categoryOneImage from '../../images/01.png'
 import categoryTwoImage from '../../images/03.png'
 import categoryThreeImage from '../../images/10.png'
 import categoryFourImage from '../../images/11.png'
 import categoryFiveImage from '../../images/09.png'
-import './directory.scss'
+import './Directory.scss'
 
 export default class Directory extends Component {
 
