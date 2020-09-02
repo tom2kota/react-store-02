@@ -8,11 +8,10 @@ export const GlobalStyle = createGlobalStyle`
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    
+    @media screen and (max-width: 800px) {
+        padding: 10px;
+    }
 }
 
 a {
