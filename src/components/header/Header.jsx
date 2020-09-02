@@ -1,30 +1,33 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import imgLogo from '../../images/logo192.png'
-import './Header.scss'
+import {HeaderContainer, LogoContainer, OptionDiv, OptionsContainer, OptionsLink} from "./headerStyles";
 
 export const Header = () => (
-    <div className='header'>
+    <HeaderContainer>
 
-        <Link to='/' className='logo-container'>
+        <LogoContainer to='/'>
             <img src={imgLogo} alt='Logo'/>
-        </Link>
+        </LogoContainer>
 
-        <div className='options'>
-            <Link to='/shop' className='option'>
+        <OptionsContainer>
+            <OptionsLink to='/shop'>
                 Shop
-            </Link>
+            </OptionsLink>
 
-            <Link to='/shop' className='option'>
+            <OptionsLink to='/shop'>
                 Contact
-            </Link>
+            </OptionsLink>
 
-            <Link to='/signin' className='option'>
-                Sign In | Sign Up
-            </Link>
+            <OptionsLink to='/signin'>
+                Sign In
+            </OptionsLink>
 
-        </div>
+            <OptionDiv>
+                Sign Out
+            </OptionDiv>
+
+        </OptionsContainer>
 
 
-    </div>
+    </HeaderContainer>
 )
