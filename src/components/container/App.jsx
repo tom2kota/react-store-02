@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import {HomePage} from "../../pages/homepage/HomePage";
+import {Homepage} from "../../pages/homepage/Homepage";
 import {CategoryOne} from "../categories/CategoryOne";
 import {CategoryTwo} from "../categories/CategoryTwo";
 import {CategoryThree} from "../categories/CategoryThree";
@@ -15,7 +15,7 @@ export const App = () => (
         <BrowserRouter>
             <Header/>
             <Switch>
-                <Route exact path="/" component={HomePage}/>
+                <Route exact path="/" component={Homepage}/>
                 <Route path="/shop" component={ShopPage}/>
                 <Route path="/signin" component={SignInUp}/>
 
