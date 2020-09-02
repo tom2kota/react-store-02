@@ -9,6 +9,7 @@ import {CategoryFive} from "../categories/CategoryFive";
 import {ShopPage} from "../../pages/shop/ShopPage";
 import {Header} from "../header/Header";
 import {SignInUp} from "../../pages/sign-in-up/SignInUp";
+import {ContactPage} from "../../pages/contact/ContactPage";
 
 export const App = () => (
     <div>
@@ -17,6 +18,7 @@ export const App = () => (
             <Switch>
                 <Route exact path="/" component={Homepage}/>
                 <Route path="/shop" component={ShopPage}/>
+                <Route path="/contact" component={ContactPage}/>
                 <Route path="/signin" component={SignInUp}/>
 
                 <Route path="/category_1" component={CategoryOne}/>
