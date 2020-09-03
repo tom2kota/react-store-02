@@ -1,8 +1,9 @@
 import React from "react";
 import imgLogo from '../../images/logo192.png'
 import {HeaderContainer, LogoContainer, OptionsContainer, OptionsLink} from "./headerStyles";
+import {auth} from '../../firebase/firebase.utils';
 
-export const Header = () => (
+export const Header = ({currentUser}) => (
     <HeaderContainer>
 
         <LogoContainer to='/'>
@@ -21,15 +22,15 @@ export const Header = () => (
             <OptionsLink to='/contact'>
                 Contact
             </OptionsLink>
-
-            <OptionsLink to='/signin'>
-                Sign In
-            </OptionsLink>
-
-            <OptionsLink as='div'>
-                Sign Out
-            </OptionsLink>
-
+            {!currentUser ?
+                <OptionsLink to='/signin'>
+                    Sign In
+                </OptionsLink>
+                :
+                <OptionsLink as='div' onClick={() => auth.signOut()}>
+                    Sign Out
+                </OptionsLink>
+            }
         </OptionsContainer>
 
     </HeaderContainer>

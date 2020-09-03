@@ -6,6 +6,22 @@ E-commerce project DEMO:
 
 ---------------
 
+## Firebase [module](https://www.npmjs.com/package/firebase)
+
+- [console](https://console.firebase.google.com/?hl=ru&pli=1)
+- Firebase => Create Project => Project Overview => Web => R-Store => Register App
+- Copy <script>   var firebaseConfig = { ... } </script>
+- Run ```npm i firebase```
+- Create file ``` /firebase/firebase.utils.js```
+- Firebase => Develop => Authentication => Sign-in method => Google => Enable => rename project => Save
+- use it on SignIn component:
+```
+    import {signInWithGoogle} from "../../firebase/firebase.utils";
+    <CustomButton onClick={signInWithGoogle}>Sign In with Google</CustomButton>
+```
+- [docs](https://firebase.google.com/docs/web/setup)
+---------------
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
