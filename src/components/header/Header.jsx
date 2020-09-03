@@ -1,6 +1,6 @@
 import React from "react";
 import imgLogo from '../../images/logo192.png'
-import {HeaderContainer, LogoContainer, OptionDiv, OptionsContainer, OptionsLink} from "./headerStyles";
+import {HeaderContainer, LogoContainer, OptionsContainer, OptionsLink} from "./headerStyles";
 
 export const Header = () => (
     <HeaderContainer>
@@ -26,9 +26,9 @@ export const Header = () => (
                 Sign In
             </OptionsLink>
 
-            <OptionDiv>
+            <OptionsLink as='div'>
                 Sign Out
-            </OptionDiv>
+            </OptionsLink>
 
         </OptionsContainer>
 
