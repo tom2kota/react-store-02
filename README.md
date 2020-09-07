@@ -15,6 +15,7 @@ E-commerce project DEMO:
 - Create file ``` /firebase/firebase.utils.js```
 - Firebase => Develop => Authentication => Sign-in method => Google => Enable => rename project => Save
 - Firebase => Develop => Authentication => Sign-in method => Email & Password => Enable => Save
+- Firebase => Develop => Authentication => Sign-in method => Authorized domains => Add domain => Add
 - use it on SignIn component:
 ```
     import {signInWithGoogle} from "../../firebase/firebase.utils";
