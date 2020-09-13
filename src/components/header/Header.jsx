@@ -2,6 +2,7 @@ import React from "react";
 import imgLogo from '../../images/logo192.png'
 import {HeaderContainer, LogoContainer, OptionsContainer, OptionsLink} from "./headerStyles";
 import {auth} from '../../firebase/firebase.utils';
+import {CartIcon} from "../cart-icon/CartIcon";
 
 export const Header = ({currentUser}) => (
     <HeaderContainer>
@@ -31,6 +32,7 @@ export const Header = ({currentUser}) => (
                     Sign Out
                 </OptionsLink>
             }
+            <CartIcon/>
         </OptionsContainer>
 
     </HeaderContainer>
