@@ -18,4 +18,15 @@
     font-weight: bold;
     bottom: 12px;
   }
+
+  .cart-dropdown {
+    display: none;
+  }
+
+  &:hover {
+    .cart-dropdown {
+      display: flex;
+    }
+  }
+
 }
