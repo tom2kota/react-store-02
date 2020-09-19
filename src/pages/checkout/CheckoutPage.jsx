@@ -6,12 +6,14 @@ import './CheckoutPage.scss'
 const CheckoutPage = ({
                           cartItems = [
                               {
+                                  id: 1,
                                   name: 'Product #1',
                                   image: imgLogo,
                                   price: 20,
                                   quantity: 1
                               },
                               {
+                                  id: 2,
                                   name: 'Product #2',
                                   image: imgLogo,
                                   price: 5,
