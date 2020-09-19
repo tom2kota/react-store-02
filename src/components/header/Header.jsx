@@ -23,6 +23,11 @@ export const Header = ({currentUser}) => (
             <OptionsLink to='/contact'>
                 Contact
             </OptionsLink>
+
+            <OptionsLink to='/checkout'>
+                Checkout
+            </OptionsLink>
+
             {!currentUser ?
                 <OptionsLink to='/signin'>
                     Sign In

@@ -11,6 +11,7 @@ import {Header} from "../header/Header";
 import {SignInUp} from "../../pages/sign-in-up/SignInUp";
 import {ContactPage} from "../../pages/contact/ContactPage";
 import {auth, createUserProfileDocument} from "../../firebase/firebase.utils";
+import CheckoutPage from "../../pages/checkout/CheckoutPage";
 
 export class App extends Component {
     state = {
@@ -53,7 +54,7 @@ export class App extends Component {
                         <Route path="/contact" component={ContactPage}/>
                         <Route exact path="/signin"
                                render={() => this.state.currentUser ? (<Redirect to='/'/>) : <SignInUp/>}/>
-
+                        <Route exact path="/checkout" component={CheckoutPage}/>
                         <Route path="/category_1" component={CategoryOne}/>
                         <Route path="/category_2" component={CategoryTwo}/>
                         <Route path="/category_3" component={CategoryThree}/>
