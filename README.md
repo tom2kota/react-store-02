@@ -1,4 +1,4 @@
-# React Store App (react: 16.13.1)
+# React Store App (React: 16.14.0)
 
 E-commerce project DEMO:
 - [vercel.app link](https://react-store-02.vercel.app)
